@@ -1,0 +1,58 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TO-DO</title>
+  <link rel="stylesheet" href="..\css\style.css">
+</head>
+<body>
+  <!--sub_task-->
+<div id="mySidenav" class="sidenav">
+<span style="font-size:30px;cursor:pointer" onclick="closeNavt()">&#9776; close</span>
+  <a href="#">Index</a>
+  <a href="#">Today</a>
+  <a href="#">Tomorrow</a>
+  <button onclick="theme()">🌙/☀️</button>
+</div>
+
+
+<span style="font-size:30px;cursor:pointer" onclick="openNavt()">&#9776; open</span>
+    <div class="add-controls">
+    <input
+      type="text"
+      value=''
+      class="
+        add-controls_inp
+      ">
+      <input 
+      type="date" 
+      id="date">
+    <button 
+    class="add-controls_btn">
+  ADD
+</button>
+  </div>
+   <h1>My tasks</h1>
+   <div class="out"></div>
+
+</div>
+<br>   
+ <!--popup-->
+
+  <div class="button">
+    <a href="#" id="open_pop_up">open popup</a>
+  </div>
+
+<div class="pop_up" id="pop_up">
+  <div class="pop_up_container" id="pop_up_container">
+    <div class="pop_up_body" id="pop_up_body">
+      <p>pop up content</p>
+      <div class="pop_up_close" id="pop_up_close">X</div>
+    </div>
+  </div>
+</div>
+
+   <script src="..\js\main.js"></script>
+</body>
+</html>
+
